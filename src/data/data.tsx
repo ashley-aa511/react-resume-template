@@ -19,6 +19,7 @@ import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -163,34 +164,41 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Personal Finance Tracker',
-    description: 'A simple web app that helps users record and categorize expenses, track spending trends, and gain insights into their financial habits. Built with Flask (Python) on the backend, a MongoDB/SQLite database for storage, and a clean frontend interface.',
-    url: 'https://personal-finance-tracker-tan.vercel.app/',
-    image: porfolioImage1,
-  },
+  title: 'CBC Learning Track - Video Presentation',
+  description: 'A recorded presentation of me explaining the CBC learning track project, where I broke down the goals, outcomes, and implementation approach in a clear and structured manner.',
+  url: 'https://www.loom.com/share/07958a3886eb470b8f29528a34bf5387?sid=de786288-6f27-43f1-88fa-89832f4a7561',
+  image: porfolioImage1, 
+},
+
+{
+  title: 'CBC Learning Track - Slide Deck',
+  description: 'A concise slide presentation highlighting what my group and I researched on CBC Learning, which includes the problem, methodology, and results in a visual format.',
+  url: 'https://docs.google.com/presentation/d/1RKXBG3GyRTAaqA7y6gnRzc1YDk5VgYjCyPFbIjBuAss/edit?usp=drive_link',
+  image: porfolioImage2, 
+},
   {
     title: 'Short CV',
     description: 'A personal portfolio web application designed to showcase my skills, projects, and experience in an interactive way. Built with React on the frontend for a smooth UI and deployed with Vercel, it serves as a dynamic alternative to a traditional resume.',
     url: 'https://cv-eight-blond.vercel.app/',
-    image: porfolioImage2,
+    image: porfolioImage3,
   },
   {
     title: 'Github Stats Visualizer',
     description: 'A web app that fetches and visualizes my GitHub activity, including repositories, commits, languages, and contributions. Built with JavaScript/React on the frontend and integrated with the GitHub API, it gives a clean snapshot of my coding journey and projects in one place.',
     url: 'https://ashley-project-ashley-aa511-val2491s-projects.vercel.app/',
-    image: porfolioImage3,
+    image: porfolioImage4,
   },
   {
     title: 'Fibonacci App',
     description: 'A minimalist web app that generates the Fibonacci sequence up to a user-defined number. It’s perfect for demonstrating basic logic, user interaction, and clean UI design, built for simplicity and clarity.',
     url: 'https://val249124-fibonacci-app.netlify.app/',
-    image: porfolioImage4,
+    image: porfolioImage5,
   },
   {
     title: 'Mathematics Switch-Up',
     description: 'A playful stats calculator where you can input numbers and instantly compute key statistics like sum, average, min/max, median, mode, or range. Designed to help users explore basic math operations through an interactive interface and smooth switch-case logic in JavaScript.',
     url: 'https://val249124-mathematics-switch-up.netlify.app/',
-    image: porfolioImage5,
+    image: porfolioImage6,
   },
 ];
 
