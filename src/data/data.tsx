@@ -19,12 +19,6 @@ import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -44,8 +38,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Ashley Awuor | Backend Engineer & Economist',
+  description: "Backend Engineer & Economist based in Kenya, passionate about building scalable backend systems and leveraging technology for economic growth.",
 };
 
 /**
@@ -69,24 +63,20 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Ashley Awuor.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        A Kenyan based <strong className="text-stone-100">Backend Engineer & Economist</strong>, currently I’m interning at <strong className="text-stone-100">Uwezo Fund</strong> where I’m gaining hands-on experience in financial inclusion and development economics.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        I have a passion for <strong className="text-stone-100">building scalable backend systems</strong> and a keen interest in <strong className="text-stone-100">data analysis</strong>. My goal is to leverage technology to drive economic growth and improve lives.  
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: 'files/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -104,16 +94,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: 'I thrive at the intersection of technology and development, using code not just to solve problems but to open up opportunities for underserved communities. My recent projects range from sentiment analysis of internet culture to data-driven economic visualizations.Outside of coding, I’m passionate about sustainable development, digital access, and the future of tech in Africa. My goal? To keep blending economics, backend engineering, and AI to build solutions that actually make people’s lives better.',
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Nairobi, KE', Icon: MapIcon},
+    {label: 'Age', text: '23', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Kenyan', Icon: FlagIcon},
+    {label: 'Interests', text: 'Travelling, Singing and Researching', Icon: SparklesIcon},
+    {label: 'Study', text: 'Moi University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Uwezo Fund', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -130,11 +118,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
+        level: 5,
       },
     ],
   },
@@ -146,12 +130,12 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
-        name: 'Typescript',
+        name: 'Tailwind CSS',
         level: 7,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'HTML/CSS',
+        level: 10,
       },
     ],
   },
@@ -159,33 +143,16 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
+        name: 'Node.js with Express',
         level: 8,
       },
       {
-        name: 'Rust',
+        name: 'Flask(Python)',
+        level: 8,
+      },
+      {
+        name: 'Databases (SQLite, MongoDB)',
         level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
       },
     ],
   },
@@ -196,70 +163,34 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Personal Finance Tracker',
+    description: 'A simple web app that helps users record and categorize expenses, track spending trends, and gain insights into their financial habits. Built with Flask (Python) on the backend, a MongoDB/SQLite database for storage, and a clean frontend interface.',
+    url: 'https://personal-finance-tracker-tan.vercel.app/',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Short CV',
+    description: 'A personal portfolio web application designed to showcase my skills, projects, and experience in an interactive way. Built with React on the frontend for a smooth UI and deployed with Vercel, it serves as a dynamic alternative to a traditional resume.',
+    url: 'https://cv-eight-blond.vercel.app/',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Github Stats Visualizer',
+    description: 'A web app that fetches and visualizes my GitHub activity, including repositories, commits, languages, and contributions. Built with JavaScript/React on the frontend and integrated with the GitHub API, it gives a clean snapshot of my coding journey and projects in one place.',
+    url: 'https://ashley-project-ashley-aa511-val2491s-projects.vercel.app/',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Fibonacci App',
+    description: 'A minimalist web app that generates the Fibonacci sequence up to a user-defined number. It’s perfect for demonstrating basic logic, user interaction, and clean UI design, built for simplicity and clarity.',
+    url: 'https://val249124-fibonacci-app.netlify.app/',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Mathematics Switch-Up',
+    description: 'A playful stats calculator where you can input numbers and instantly compute key statistics like sum, average, min/max, median, mode, or range. Designed to help users explore basic math operations through an interactive interface and smooth switch-case logic in JavaScript.',
+    url: 'https://val249124-mathematics-switch-up.netlify.app/',
     image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
   },
 ];
 
@@ -268,39 +199,37 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'January 2021 - December 2024',
+    location: 'Moi University',
+    title: 'Bachelor of Arts in Economics.',
+    content: <p>I built a strong foundation in microeconomics, macroeconomics, and development economics while also gaining hands-on experience with statistical and econometric analysis. I developed key skills in analytical thinking, research, and quantitative problem-solving, alongside the ability to evaluate policies and interpret complex data. Beyond academics, I honed my collaboration, communication, and critical thinking skills, preparing me to apply economic insights to real-world challenges.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'February 2025',
+    location: 'ALX Africa',
+    title: 'Software Engineering',
+    content: <p>I gained practical experience in building scalable applications and working with modern technologies. I learned how to design and implement APIs, manage databases (SQL & NoSQL), and apply best practices in problem-solving, debugging, and version control with Git/GitHub. The program also emphasized collaboration, agile teamwork, and peer learning, which sharpened my ability to work in fast-paced, team-driven environments. Through this, I developed strong technical and soft skills that prepared me to build impactful, real-world solutions.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'March 2025 - Present',
+    location: 'Uwezo Fund',
+    title: 'Intern',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        I support initiatives that promote financial inclusion and empower youth and women through access to affordable credit. My work involves data management, report preparation, and assisting in community outreach activities, which has strengthened my skills in research, analysis, and public sector operations. I’m also gaining hands-on experience in collaboration and administrative processes within a development-focused institution, while deepening my interest in the intersection of economics, finance, and technology.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'May 2023 - July 2023',
+    location: 'National Health Insurance Fund',
+    title: 'Attachee',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        I worked on projects that blended data, research, and tech to improve how health programs reach people. I helped spot gaps in reporting, made processes smoother, and collaborated with teams from different backgrounds to push for better accountability. The experience showed me how economics and tech can come together to actually drive impact in real communities.
       </p>
     ),
   },
@@ -313,19 +242,19 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: ' What I bring to the table',
+      text: 'I’m passionate about blending economics and backend engineering to solve real-world challenges. I value collaboration, clear communication, and building solutions that make a difference.',
+      image: 'https://images.pexels.com/photos/879109/pexels-photo-879109.jpeg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'How I work',
+      text: 'Understand the problem, Plan the solution, Build & test and finally Iterate & deploy',
+      image: 'https://images.pexels.com/photos/965345/pexels-photo-965345.jpeg',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Hackathons',
+      text: 'I don’t just build for myself, I build in public and test my skills against others. I love the thrill of hackathons and the opportunity to learn from others.',
+      image: 'https://images.pexels.com/photos/1181260/pexels-photo-1181260.jpeg',
     },
   ],
 };
@@ -336,27 +265,27 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'You can reach me through any of the platforms below, or send me an email directly. I’m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'okeyoashley@gmail.com',
+      href: 'mailto:okeyoashley@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Nairobi, Kenya',
+      href: 'https://www.google.com/maps/place/Nairobi,+Kenya',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@ashleyokeyo',
+      href: 'https://www.instagram.com/ashleyokeyo/?utm_source=qr&igsh=MTFlMGlwcWVnbTYwNA%3D%3D#',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'ashley-aa511',
+      href: 'https://github.com/ashley-aa511',
     },
   ],
 };
@@ -365,9 +294,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/ashley-aa511'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/27969498/ashley-okeyo'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/ashley-okeyo-a781a61b5/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/ashleyokeyo/?utm_source=qr&igsh=MTFlMGlwcWVnbTYwNA%3D%3D#'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://x.com/ashleyawuor254?t=_AYpsabA-3eraMfyixYoAQ&s=03'},
 ];
