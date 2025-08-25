@@ -74,7 +74,7 @@ export const heroData: Hero = {
         I have a passion for <strong className="text-stone-100">building scalable backend systems</strong> and a keen interest in <strong className="text-stone-100">data analysis</strong>. My goal is to leverage technology to drive economic growth and improve lives.  
       </p>
       <video muted loop width="100%" height="auto">
-  <source src="images/background.mp4" type="video/mp4" />
+  <source src="background.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
 
