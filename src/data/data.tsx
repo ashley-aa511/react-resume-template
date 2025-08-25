@@ -89,7 +89,7 @@ export const heroData: Hero = {
       primary: false,
     },
     {
-      href: 'https://drive.google.com/file/d/1ADsn_46gbe6zKefAyYXoRxc6lcHvAmR4/view?usp=sharing',
+      href: 'https://drive.google.com/uc?export=download&id=1ADsn_46gbe6zKefAyYXoRxc6lcHvAmR4',
       text: 'Pitch Video',
       primary: true,
       Icon: ArrowDownTrayIcon,
