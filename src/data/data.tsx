@@ -88,6 +88,12 @@ export const heroData: Hero = {
       text: 'Contact',
       primary: false,
     },
+    {
+      href: 'files/background.mp4',
+      text: 'Pitch Video',
+      primary: true,
+      Icon: ArrowDownTrayIcon,
+    },
   ],
 };
 
