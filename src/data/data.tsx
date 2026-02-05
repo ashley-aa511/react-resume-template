@@ -64,7 +64,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Ashley Awuor.`,
+  name: `I'm Ashley Awuor Okeyo.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -131,19 +131,19 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Data Analysis',
     skills: [
       {
-        name: 'React',
+        name: 'SQL',
+        level: 5,
+      },
+      {
+        name: 'Microsoft Excel',
         level: 9,
       },
       {
-        name: 'Tailwind CSS',
-        level: 7,
-      },
-      {
-        name: 'HTML/CSS',
-        level: 10,
+        name: 'Tableau',
+        level: 6,
       },
     ],
   },
