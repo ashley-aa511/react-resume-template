@@ -40,7 +40,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Ashley Awuor | Backend Engineer & Economist',
-  description: "Backend Engineer & Economist based in Kenya, passionate about building scalable backend systems and leveraging technology for economic growth.",
+  description: "Data Analyst based in Kenya, passionate about using data to create scalable solutions and leveraging technology for sustainable growth.",
 };
 
 /**
@@ -68,10 +68,10 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        A Kenyan based <strong className="text-stone-100">Backend Engineer & Economist</strong>, currently I’m interning at <strong className="text-stone-100">Uwezo Fund</strong> where I’m gaining hands-on experience in financial inclusion and development economics.
+        A Kenyan based <strong className="text-stone-100">Data Analyst</strong>, currently I’m interning at <strong className="text-stone-100">Uwezo Fund</strong> where I’m gaining hands-on experience in financial inclusion and development economics.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I have a passion for <strong className="text-stone-100">building scalable backend systems</strong> and a keen interest in <strong className="text-stone-100">data analysis</strong>. My goal is to leverage technology to drive economic growth and improve lives.  
+        I have a passion for <strong className="text-stone-100">analyzing data</strong> and a keen interest in <strong className="text-stone-100">helping stakeholders understand how data is key in making decisions.</strong>. My goal is to leverage technology to drive economic growth and improve lives.  
       </p>
 
     </>
